@@ -1,0 +1,7 @@
+$Computers = Get-Content C:\Temp\Ping_IPs
+
+foreach ($C in $Computers){
+
+Test-Connection -ComputerName $C -Count 1 -Verbose
+
+}
