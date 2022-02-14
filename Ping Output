@@ -1,0 +1,12 @@
+$InputFile = 'C:\Temp\SW_List.txt'
+$Computers = Get-content $InputFile
+
+ 
+$forloop=foreach ($C in $Computers){
+ if (Test-Connection -IPAddress $machine -Count 1 -ErrorAction SilentlyContinue){
+   Write-Host "$C,up" -ForegroundColor Green
+ }
+ else{
+   (Write-Host "$C,down" -ForegroundColor Red | where{$_.Online -eq 'False'})
+     } 
+}
