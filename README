@@ -1,1 +1,1 @@
-Create a txt file of computer names/IPs and put them in the c:\temp\Ping_IPs.txt file in the $Computers variable. This script will send them an ICMP request. 
+Create a txt file of computer names/IPs and put them in the c:\temp\Ping_IPs.txt file in the $Computers variable. This script will send them an ICMP packet. 
