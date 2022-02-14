@@ -1,4 +1,4 @@
-$Computers = Get-Content C:\Temp\Ping_IPs
+$Computers = Get-Content C:\Temp\Ping_IPs.txt
 
 foreach ($C in $Computers){
 
